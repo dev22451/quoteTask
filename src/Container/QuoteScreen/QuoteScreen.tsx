@@ -19,7 +19,7 @@ const QuoteScreen = () => {
       });
       if (res) {
         setIsLoading(false);
-        setPage((prev) => prev + 1);
+        setPage((p) => p + 1);
         const data: Array<QuoteInterface> = [...quoteList, ...res.results];
         setQuoteList(data);
       }
